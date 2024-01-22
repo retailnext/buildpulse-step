@@ -40,7 +40,7 @@ jobs:
       - name: Validate Container
         id: validate
         run: |
-          docker run --rm -i --entrypoint=/usr/local/bin/buildpulse-test-reporter ${{ env.TEST_TAG }} --help \
+          docker run --rm -i --entrypoint=/usr/local/bin/buildpulse-test-reporter ${{ env.TEST_TAG }} --help 2>&1 \
           | grep 'buildpulse-test-reporter submit TEST_RESULTS_PATH'
           
           version="$(docker image inspect ${{ env.TEST_TAG }} --format='{{ index .Config.Labels "org.opencontainers.image.version" }}')"
