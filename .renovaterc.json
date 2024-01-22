@@ -1,8 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>retailnext/renovate-config",
+    "config:best-practices",
+    ":semanticCommits",
+    "regexManagers:dockerfileVersions",
+    "regexManagers:githubActionsVersions",
     ":automergeAll",
     ":gitSignOff"
+  ],
+  "labels": [
+    "dependencies"
   ]
 }
