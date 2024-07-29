@@ -3,8 +3,8 @@
   "extends": [
     "config:best-practices",
     ":semanticCommits",
-    "regexManagers:dockerfileVersions",
-    "regexManagers:githubActionsVersions",
+    "customManagers:dockerfileVersions",
+    "customManagers:githubActionsVersions",
     ":automergeAll",
     ":gitSignOff"
   ],
