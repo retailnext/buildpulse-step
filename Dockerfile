@@ -3,7 +3,7 @@ FROM gcr.io/distroless/static-debian12:debug@sha256:5c474275684bbf271ec40502ab50
 ARG TARGETARCH
 
 # renovate: datasource=github-releases depName=buildpulse/test-reporter
-ARG TEST_REPORTER_VERSION=v0.28.0
+ARG TEST_REPORTER_VERSION=v0.29.0
 
 LABEL org.opencontainers.image.version="$TEST_REPORTER_VERSION"
 
