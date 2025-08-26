@@ -1,4 +1,4 @@
-FROM gcr.io/distroless/static-debian12:debug@sha256:072204b513ba56f418d58f9d771de54ffe4fddd22fe5cf891697e6129bd8fb6e
+FROM gcr.io/distroless/static-debian12:debug@sha256:2e762e2ae4f0043d20ae194458e1230a63e5a2dc6635e8d260bc59b64fbda921
 
 ARG TARGETARCH
 
